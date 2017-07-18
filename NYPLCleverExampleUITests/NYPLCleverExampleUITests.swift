@@ -1,6 +1,6 @@
 import XCTest
 
-class NYPLCleverDemoUITests: XCTestCase {
+class NYPLCleverExampleUITests: XCTestCase {
 
   override func setUp() {
     super.setUp()

@@ -14,7 +14,7 @@
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
 		2D3726DC1F1EAB570063E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DB1F1EAB570063E9FB /* Assets.xcassets */; };
 		2D3726DF1F1EAB570063E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */; };
-		2D3726F51F1EAB570063E9FB /* NYPLCleverDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLCleverDemoUITests.swift */; };
+		2D3726F51F1EAB570063E9FB /* NYPLCleverExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 			containerPortal = 2D3726AB1F1E9F190063E9FB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D3726D11F1EAB570063E9FB;
-			remoteInfo = NYPLCleverDemo;
+			remoteInfo = NYPLCleverExample;
 		};
 		2D3727001F1EAB7B0063E9FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,14 +48,14 @@
 		2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726C21F1E9F1A0063E9FB /* NYPLCleverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverTests.swift; sourceTree = "<group>"; };
 		2D3726C41F1E9F1A0063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726D21F1EAB570063E9FB /* NYPLCleverDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLCleverDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLCleverExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726D41F1EAB570063E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3726D61F1EAB570063E9FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D3726DB1F1EAB570063E9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3726DE1F1EAB570063E9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3726E01F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726F01F1EAB570063E9FB /* NYPLCleverDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3726F41F1EAB570063E9FB /* NYPLCleverDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverDemoUITests.swift; sourceTree = "<group>"; };
+		2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverExampleUITests.swift; sourceTree = "<group>"; };
 		2D3726F61F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,8 +97,8 @@
 			children = (
 				2D3726B61F1E9F190063E9FB /* NYPLClever */,
 				2D3726C11F1E9F1A0063E9FB /* NYPLCleverTests */,
-				2D3726D31F1EAB570063E9FB /* NYPLCleverDemo */,
-				2D3726F31F1EAB570063E9FB /* NYPLCleverDemoUITests */,
+				2D3726D31F1EAB570063E9FB /* NYPLCleverExample */,
+				2D3726F31F1EAB570063E9FB /* NYPLCleverExampleUITests */,
 				2D3726B51F1E9F190063E9FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 			children = (
 				2D3726B41F1E9F190063E9FB /* NYPLClever.framework */,
 				2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */,
-				2D3726D21F1EAB570063E9FB /* NYPLCleverDemo.app */,
-				2D3726F01F1EAB570063E9FB /* NYPLCleverDemoUITests.xctest */,
+				2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */,
+				2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			path = NYPLCleverTests;
 			sourceTree = "<group>";
 		};
-		2D3726D31F1EAB570063E9FB /* NYPLCleverDemo */ = {
+		2D3726D31F1EAB570063E9FB /* NYPLCleverExample */ = {
 			isa = PBXGroup;
 			children = (
 				2D3726D41F1EAB570063E9FB /* AppDelegate.swift */,
@@ -141,16 +141,16 @@
 				2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */,
 				2D3726E01F1EAB570063E9FB /* Info.plist */,
 			);
-			path = NYPLCleverDemo;
+			path = NYPLCleverExample;
 			sourceTree = "<group>";
 		};
-		2D3726F31F1EAB570063E9FB /* NYPLCleverDemoUITests */ = {
+		2D3726F31F1EAB570063E9FB /* NYPLCleverExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2D3726F41F1EAB570063E9FB /* NYPLCleverDemoUITests.swift */,
+				2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */,
 				2D3726F61F1EAB570063E9FB /* Info.plist */,
 			);
-			path = NYPLCleverDemoUITests;
+			path = NYPLCleverExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +203,9 @@
 			productReference = 2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2D3726D11F1EAB570063E9FB /* NYPLCleverDemo */ = {
+		2D3726D11F1EAB570063E9FB /* NYPLCleverExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverDemo" */;
+			buildConfigurationList = 2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExample" */;
 			buildPhases = (
 				2D3726CE1F1EAB570063E9FB /* Sources */,
 				2D3726CF1F1EAB570063E9FB /* Frameworks */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				2D3727011F1EAB7B0063E9FB /* PBXTargetDependency */,
 			);
-			name = NYPLCleverDemo;
-			productName = NYPLCleverDemo;
-			productReference = 2D3726D21F1EAB570063E9FB /* NYPLCleverDemo.app */;
+			name = NYPLCleverExample;
+			productName = NYPLCleverExample;
+			productReference = 2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D3726EF1F1EAB570063E9FB /* NYPLCleverDemoUITests */ = {
+		2D3726EF1F1EAB570063E9FB /* NYPLCleverExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverDemoUITests" */;
+			buildConfigurationList = 2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExampleUITests" */;
 			buildPhases = (
 				2D3726EC1F1EAB570063E9FB /* Sources */,
 				2D3726ED1F1EAB570063E9FB /* Frameworks */,
@@ -234,9 +234,9 @@
 			dependencies = (
 				2D3726F21F1EAB570063E9FB /* PBXTargetDependency */,
 			);
-			name = NYPLCleverDemoUITests;
-			productName = NYPLCleverDemoUITests;
-			productReference = 2D3726F01F1EAB570063E9FB /* NYPLCleverDemoUITests.xctest */;
+			name = NYPLCleverExampleUITests;
+			productName = NYPLCleverExampleUITests;
+			productReference = 2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -287,8 +287,8 @@
 			targets = (
 				2D3726B31F1E9F190063E9FB /* NYPLClever */,
 				2D3726BC1F1E9F1A0063E9FB /* NYPLCleverTests */,
-				2D3726D11F1EAB570063E9FB /* NYPLCleverDemo */,
-				2D3726EF1F1EAB570063E9FB /* NYPLCleverDemoUITests */,
+				2D3726D11F1EAB570063E9FB /* NYPLCleverExample */,
+				2D3726EF1F1EAB570063E9FB /* NYPLCleverExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,7 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726F51F1EAB570063E9FB /* NYPLCleverDemoUITests.swift in Sources */,
+				2D3726F51F1EAB570063E9FB /* NYPLCleverExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +369,7 @@
 		};
 		2D3726F21F1EAB570063E9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3726D11F1EAB570063E9FB /* NYPLCleverDemo */;
+			target = 2D3726D11F1EAB570063E9FB /* NYPLCleverExample */;
 			targetProxy = 2D3726F11F1EAB570063E9FB /* PBXContainerItemProxy */;
 		};
 		2D3727011F1EAB7B0063E9FB /* PBXTargetDependency */ = {
@@ -559,9 +559,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverDemo/Info.plist;
+				INFOPLIST_FILE = NYPLCleverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -572,9 +572,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverDemo/Info.plist;
+				INFOPLIST_FILE = NYPLCleverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -585,12 +585,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverDemoUITests/Info.plist;
+				INFOPLIST_FILE = NYPLCleverExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NYPLCleverDemo;
+				TEST_TARGET_NAME = NYPLCleverExample;
 			};
 			name = Debug;
 		};
@@ -599,12 +599,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverDemoUITests/Info.plist;
+				INFOPLIST_FILE = NYPLCleverExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NYPLCleverDemo;
+				TEST_TARGET_NAME = NYPLCleverExample;
 			};
 			name = Release;
 		};
@@ -636,7 +636,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverDemo" */ = {
+		2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726F81F1EAB570063E9FB /* Debug */,
@@ -644,7 +644,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverDemoUITests" */ = {
+		2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726FE1F1EAB570063E9FB /* Debug */,
