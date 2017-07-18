@@ -171,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3726C81F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLClever" */;
 			buildPhases = (
+				2D3727021F1EB1B50063E9FB /* Run SwiftLint */,
 				2D3726AF1F1E9F190063E9FB /* Sources */,
 				2D3726B01F1E9F190063E9FB /* Frameworks */,
 				2D3726B11F1E9F190063E9FB /* Headers */,
@@ -325,6 +326,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3727021F1EB1B50063E9FB /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFTLINT=\"$PROJECT_DIR/SwiftLint/swiftlint\"\nif [ -f \"$SWIFTLINT\" ]; then\n  \"$SWIFTLINT\"\nelse\n  echo error: 'Run \"swiftlint-setup.sh\" to enable linting.'\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D3726AF1F1E9F190063E9FB /* Sources */ = {
@@ -627,6 +645,7 @@
 				2D3726CA1F1E9F1A0063E9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverTests" */ = {
 			isa = XCConfigurationList;
@@ -635,6 +654,7 @@
 				2D3726CD1F1E9F1A0063E9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExample" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +663,7 @@
 				2D3726F91F1EAB570063E9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +672,7 @@
 				2D3726FF1F1EAB570063E9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

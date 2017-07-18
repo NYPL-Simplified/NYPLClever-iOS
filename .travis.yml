@@ -2,7 +2,7 @@ osx_image: xcode8.3
 language: objective-c
 before_install:
   - set -ef -o pipefail
-  # - ./swiftlint-setup.sh
+  - ./swiftlint-setup.sh
   - FLAGS=()
   - FLAGS+=(-project NYPLClever.xcodeproj)
   - FLAGS+=(-scheme NYPLCleverExample)
