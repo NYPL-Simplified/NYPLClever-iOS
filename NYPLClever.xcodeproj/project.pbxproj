@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2D3726BE1F1E9F1A0063E9FB /* NYPLClever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3726B41F1E9F190063E9FB /* NYPLClever.framework */; };
-		2D3726C31F1E9F1A0063E9FB /* NYPLCleverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726C21F1E9F1A0063E9FB /* NYPLCleverTests.swift */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLClever.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLClever.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
 		2D3726DC1F1EAB570063E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DB1F1EAB570063E9FB /* Assets.xcassets */; };
 		2D3726DF1F1EAB570063E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */; };
 		2D3726F51F1EAB570063E9FB /* NYPLCleverExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */; };
+		2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */; };
+		2D3727081F1EC7110063E9FB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727071F1EC7110063E9FB /* JSON.swift */; };
+		2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */; };
+		2D37270E1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */; };
+		2D3727101F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */; };
+		2D3727121F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */; };
+		2D3727141F1ED3570063E9FB /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727131F1ED3570063E9FB /* JSONTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +52,6 @@
 		2D3726B71F1E9F190063E9FB /* NYPLClever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLClever.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3726C21F1E9F1A0063E9FB /* NYPLCleverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverTests.swift; sourceTree = "<group>"; };
 		2D3726C41F1E9F1A0063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLCleverExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726D41F1EAB570063E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +62,13 @@
 		2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverExampleUITests.swift; sourceTree = "<group>"; };
 		2D3726F61F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthentication.swift; sourceTree = "<group>"; };
+		2D3727071F1EC7110063E9FB /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsGood.json; sourceTree = "<group>"; };
+		2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationTests.swift; sourceTree = "<group>"; };
+		2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsBad0.json; sourceTree = "<group>"; };
+		2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsBad1.json; sourceTree = "<group>"; };
+		2D3727131F1ED3570063E9FB /* JSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +129,10 @@
 		2D3726B61F1E9F190063E9FB /* NYPLClever */ = {
 			isa = PBXGroup;
 			children = (
-				2D3726B71F1E9F190063E9FB /* NYPLClever.h */,
 				2D3726B81F1E9F190063E9FB /* Info.plist */,
+				2D3727071F1EC7110063E9FB /* JSON.swift */,
+				2D3726B71F1E9F190063E9FB /* NYPLClever.h */,
+				2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */,
 			);
 			path = NYPLClever;
 			sourceTree = "<group>";
@@ -126,8 +140,12 @@
 		2D3726C11F1E9F1A0063E9FB /* NYPLCleverTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D3726C21F1E9F1A0063E9FB /* NYPLCleverTests.swift */,
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
+				2D3727131F1ED3570063E9FB /* JSONTests.swift */,
+				2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */,
+				2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */,
+				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
+				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */,
 			);
 			path = NYPLCleverTests;
 			sourceTree = "<group>";
@@ -253,6 +271,7 @@
 					2D3726B31F1E9F190063E9FB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7262U6ST2R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					2D3726BC1F1E9F1A0063E9FB = {
@@ -306,6 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */,
+				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json in Resources */,
+				2D3727101F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */,
+				2D3727081F1EC7110063E9FB /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726C31F1E9F1A0063E9FB /* NYPLCleverTests.swift in Sources */,
+				2D37270E1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift in Sources */,
+				2D3727141F1ED3570063E9FB /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +538,7 @@
 		2D3726C91F1E9F1A0063E9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
@@ -525,6 +551,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLClever;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -532,6 +559,7 @@
 		2D3726CA1F1E9F1A0063E9FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
@@ -551,6 +579,7 @@
 		2D3726CC1F1E9F1A0063E9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
 				INFOPLIST_FILE = NYPLCleverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -563,6 +592,7 @@
 		2D3726CD1F1E9F1A0063E9FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
 				INFOPLIST_FILE = NYPLCleverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
