@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D3726B31F1E9F190063E9FB"
-               BuildableName = "NYPLClever.framework"
-               BlueprintName = "NYPLClever"
-               ReferencedContainer = "container:NYPLClever.xcodeproj">
+               BuildableName = "NYPLOAuthWebFlow.framework"
+               BlueprintName = "NYPLOAuthWebFlow"
+               ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D3726BC1F1E9F1A0063E9FB"
-               BuildableName = "NYPLCleverTests.xctest"
-               BlueprintName = "NYPLCleverTests"
-               ReferencedContainer = "container:NYPLClever.xcodeproj">
+               BuildableName = "NYPLOAuthWebFlowTests.xctest"
+               BlueprintName = "NYPLOAuthWebFlowTests"
+               ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D3726B31F1E9F190063E9FB"
-            BuildableName = "NYPLClever.framework"
-            BlueprintName = "NYPLClever"
-            ReferencedContainer = "container:NYPLClever.xcodeproj">
+            BuildableName = "NYPLOAuthWebFlow.framework"
+            BlueprintName = "NYPLOAuthWebFlow"
+            ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D3726B31F1E9F190063E9FB"
-            BuildableName = "NYPLClever.framework"
-            BlueprintName = "NYPLClever"
-            ReferencedContainer = "container:NYPLClever.xcodeproj">
+            BuildableName = "NYPLOAuthWebFlow.framework"
+            BlueprintName = "NYPLOAuthWebFlow"
+            ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D3726B31F1E9F190063E9FB"
-            BuildableName = "NYPLClever.framework"
-            BlueprintName = "NYPLClever"
-            ReferencedContainer = "container:NYPLClever.xcodeproj">
+            BuildableName = "NYPLOAuthWebFlow.framework"
+            BlueprintName = "NYPLOAuthWebFlow"
+            ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

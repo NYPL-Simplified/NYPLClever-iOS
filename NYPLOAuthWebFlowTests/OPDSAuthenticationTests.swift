@@ -1,5 +1,5 @@
 import XCTest
-@testable import NYPLClever
+@testable import NYPLOAuthWebFlow
 
 final class OPDSAuthenticationTests: XCTestCase {
 

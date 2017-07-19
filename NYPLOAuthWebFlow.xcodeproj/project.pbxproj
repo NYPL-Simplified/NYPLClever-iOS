@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D3726BE1F1E9F1A0063E9FB /* NYPLClever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3726B41F1E9F190063E9FB /* NYPLClever.framework */; };
-		2D3726C51F1E9F1A0063E9FB /* NYPLClever.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLClever.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3726BE1F1E9F1A0063E9FB /* NYPLOAuthWebFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */; };
+		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
 		2D3726DC1F1EAB570063E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DB1F1EAB570063E9FB /* Assets.xcassets */; };
 		2D3726DF1F1EAB570063E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */; };
-		2D3726F51F1EAB570063E9FB /* NYPLCleverExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */; };
+		2D3726F51F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */; };
 		2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */; };
 		2D3727081F1EC7110063E9FB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727071F1EC7110063E9FB /* JSON.swift */; };
 		2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */; };
@@ -29,38 +29,38 @@
 			containerPortal = 2D3726AB1F1E9F190063E9FB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D3726B31F1E9F190063E9FB;
-			remoteInfo = NYPLClever;
+			remoteInfo = NYPLOAuthWebFlow;
 		};
 		2D3726F11F1EAB570063E9FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D3726AB1F1E9F190063E9FB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D3726D11F1EAB570063E9FB;
-			remoteInfo = NYPLCleverExample;
+			remoteInfo = NYPLOAuthWebFlowExample;
 		};
 		2D3727001F1EAB7B0063E9FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D3726AB1F1E9F190063E9FB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D3726B31F1E9F190063E9FB;
-			remoteInfo = NYPLClever;
+			remoteInfo = NYPLOAuthWebFlow;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D3726B41F1E9F190063E9FB /* NYPLClever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLClever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3726B71F1E9F190063E9FB /* NYPLClever.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLClever.h; sourceTree = "<group>"; };
+		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLOAuthWebFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726C41F1E9F1A0063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLCleverExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726D21F1EAB570063E9FB /* NYPLOAuthWebFlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLOAuthWebFlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726D41F1EAB570063E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3726D61F1EAB570063E9FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D3726DB1F1EAB570063E9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3726DE1F1EAB570063E9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3726E01F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLCleverExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLCleverExampleUITests.swift; sourceTree = "<group>"; };
+		2D3726F01F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLOAuthWebFlowExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLOAuthWebFlowExampleUITests.swift; sourceTree = "<group>"; };
 		2D3726F61F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthentication.swift; sourceTree = "<group>"; };
 		2D3727071F1EC7110063E9FB /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726BE1F1E9F1A0063E9FB /* NYPLClever.framework in Frameworks */,
+				2D3726BE1F1E9F1A0063E9FB /* NYPLOAuthWebFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,10 +107,10 @@
 		2D3726AA1F1E9F190063E9FB = {
 			isa = PBXGroup;
 			children = (
-				2D3726B61F1E9F190063E9FB /* NYPLClever */,
-				2D3726C11F1E9F1A0063E9FB /* NYPLCleverTests */,
-				2D3726D31F1EAB570063E9FB /* NYPLCleverExample */,
-				2D3726F31F1EAB570063E9FB /* NYPLCleverExampleUITests */,
+				2D3726B61F1E9F190063E9FB /* NYPLOAuthWebFlow */,
+				2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */,
+				2D3726D31F1EAB570063E9FB /* NYPLOAuthWebFlowExample */,
+				2D3726F31F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */,
 				2D3726B51F1E9F190063E9FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,26 +118,26 @@
 		2D3726B51F1E9F190063E9FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D3726B41F1E9F190063E9FB /* NYPLClever.framework */,
-				2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */,
-				2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */,
-				2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */,
+				2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */,
+				2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */,
+				2D3726D21F1EAB570063E9FB /* NYPLOAuthWebFlowExample.app */,
+				2D3726F01F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D3726B61F1E9F190063E9FB /* NYPLClever */ = {
+		2D3726B61F1E9F190063E9FB /* NYPLOAuthWebFlow */ = {
 			isa = PBXGroup;
 			children = (
 				2D3726B81F1E9F190063E9FB /* Info.plist */,
 				2D3727071F1EC7110063E9FB /* JSON.swift */,
-				2D3726B71F1E9F190063E9FB /* NYPLClever.h */,
+				2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */,
 				2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */,
 			);
-			path = NYPLClever;
+			path = NYPLOAuthWebFlow;
 			sourceTree = "<group>";
 		};
-		2D3726C11F1E9F1A0063E9FB /* NYPLCleverTests */ = {
+		2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */ = {
 			isa = PBXGroup;
 			children = (
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
@@ -147,10 +147,10 @@
 				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
 				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */,
 			);
-			path = NYPLCleverTests;
+			path = NYPLOAuthWebFlowTests;
 			sourceTree = "<group>";
 		};
-		2D3726D31F1EAB570063E9FB /* NYPLCleverExample */ = {
+		2D3726D31F1EAB570063E9FB /* NYPLOAuthWebFlowExample */ = {
 			isa = PBXGroup;
 			children = (
 				2D3726D41F1EAB570063E9FB /* AppDelegate.swift */,
@@ -159,16 +159,16 @@
 				2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */,
 				2D3726E01F1EAB570063E9FB /* Info.plist */,
 			);
-			path = NYPLCleverExample;
+			path = NYPLOAuthWebFlowExample;
 			sourceTree = "<group>";
 		};
-		2D3726F31F1EAB570063E9FB /* NYPLCleverExampleUITests */ = {
+		2D3726F31F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2D3726F41F1EAB570063E9FB /* NYPLCleverExampleUITests.swift */,
+				2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */,
 				2D3726F61F1EAB570063E9FB /* Info.plist */,
 			);
-			path = NYPLCleverExampleUITests;
+			path = NYPLOAuthWebFlowExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,16 +178,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726C51F1E9F1A0063E9FB /* NYPLClever.h in Headers */,
+				2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D3726B31F1E9F190063E9FB /* NYPLClever */ = {
+		2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726C81F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLClever" */;
+			buildConfigurationList = 2D3726C81F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlow" */;
 			buildPhases = (
 				2D3727021F1EB1B50063E9FB /* Run SwiftLint */,
 				2D3726AF1F1E9F190063E9FB /* Sources */,
@@ -199,14 +199,14 @@
 			);
 			dependencies = (
 			);
-			name = NYPLClever;
-			productName = NYPLClever;
-			productReference = 2D3726B41F1E9F190063E9FB /* NYPLClever.framework */;
+			name = NYPLOAuthWebFlow;
+			productName = NYPLOAuthWebFlow;
+			productReference = 2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D3726BC1F1E9F1A0063E9FB /* NYPLCleverTests */ = {
+		2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverTests" */;
+			buildConfigurationList = 2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowTests" */;
 			buildPhases = (
 				2D3726B91F1E9F1A0063E9FB /* Sources */,
 				2D3726BA1F1E9F1A0063E9FB /* Frameworks */,
@@ -217,14 +217,14 @@
 			dependencies = (
 				2D3726C01F1E9F1A0063E9FB /* PBXTargetDependency */,
 			);
-			name = NYPLCleverTests;
-			productName = NYPLCleverTests;
-			productReference = 2D3726BD1F1E9F1A0063E9FB /* NYPLCleverTests.xctest */;
+			name = NYPLOAuthWebFlowTests;
+			productName = NYPLOAuthWebFlowTests;
+			productReference = 2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2D3726D11F1EAB570063E9FB /* NYPLCleverExample */ = {
+		2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExample" */;
+			buildConfigurationList = 2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExample" */;
 			buildPhases = (
 				2D3726CE1F1EAB570063E9FB /* Sources */,
 				2D3726CF1F1EAB570063E9FB /* Frameworks */,
@@ -235,14 +235,14 @@
 			dependencies = (
 				2D3727011F1EAB7B0063E9FB /* PBXTargetDependency */,
 			);
-			name = NYPLCleverExample;
-			productName = NYPLCleverExample;
-			productReference = 2D3726D21F1EAB570063E9FB /* NYPLCleverExample.app */;
+			name = NYPLOAuthWebFlowExample;
+			productName = NYPLOAuthWebFlowExample;
+			productReference = 2D3726D21F1EAB570063E9FB /* NYPLOAuthWebFlowExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D3726EF1F1EAB570063E9FB /* NYPLCleverExampleUITests */ = {
+		2D3726EF1F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExampleUITests" */;
+			buildConfigurationList = 2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExampleUITests" */;
 			buildPhases = (
 				2D3726EC1F1EAB570063E9FB /* Sources */,
 				2D3726ED1F1EAB570063E9FB /* Frameworks */,
@@ -253,9 +253,9 @@
 			dependencies = (
 				2D3726F21F1EAB570063E9FB /* PBXTargetDependency */,
 			);
-			name = NYPLCleverExampleUITests;
-			productName = NYPLCleverExampleUITests;
-			productReference = 2D3726F01F1EAB570063E9FB /* NYPLCleverExampleUITests.xctest */;
+			name = NYPLOAuthWebFlowExampleUITests;
+			productName = NYPLOAuthWebFlowExampleUITests;
+			productReference = 2D3726F01F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D3726AE1F1E9F190063E9FB /* Build configuration list for PBXProject "NYPLClever" */;
+			buildConfigurationList = 2D3726AE1F1E9F190063E9FB /* Build configuration list for PBXProject "NYPLOAuthWebFlow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -305,10 +305,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D3726B31F1E9F190063E9FB /* NYPLClever */,
-				2D3726BC1F1E9F1A0063E9FB /* NYPLCleverTests */,
-				2D3726D11F1EAB570063E9FB /* NYPLCleverExample */,
-				2D3726EF1F1EAB570063E9FB /* NYPLCleverExampleUITests */,
+				2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */,
+				2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */,
+				2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */,
+				2D3726EF1F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -398,7 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726F51F1EAB570063E9FB /* NYPLCleverExampleUITests.swift in Sources */,
+				2D3726F51F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +407,17 @@
 /* Begin PBXTargetDependency section */
 		2D3726C01F1E9F1A0063E9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3726B31F1E9F190063E9FB /* NYPLClever */;
+			target = 2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */;
 			targetProxy = 2D3726BF1F1E9F1A0063E9FB /* PBXContainerItemProxy */;
 		};
 		2D3726F21F1EAB570063E9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3726D11F1EAB570063E9FB /* NYPLCleverExample */;
+			target = 2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */;
 			targetProxy = 2D3726F11F1EAB570063E9FB /* PBXContainerItemProxy */;
 		};
 		2D3727011F1EAB7B0063E9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3726B31F1E9F190063E9FB /* NYPLClever */;
+			target = 2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */;
 			targetProxy = 2D3727001F1EAB7B0063E9FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,10 +545,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NYPLClever/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLClever;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -566,10 +566,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NYPLClever/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLClever;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -581,9 +581,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverTests/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -594,9 +594,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverTests/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -607,9 +607,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverExample/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -620,9 +620,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverExample/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -633,12 +633,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverExampleUITests/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NYPLCleverExample;
+				TEST_TARGET_NAME = NYPLOAuthWebFlowExample;
 			};
 			name = Debug;
 		};
@@ -647,19 +647,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7262U6ST2R;
-				INFOPLIST_FILE = NYPLCleverExampleUITests/Info.plist;
+				INFOPLIST_FILE = NYPLOAuthWebFlowExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLCleverExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.nypl.simplified.NYPLOAuthWebFlowExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NYPLCleverExample;
+				TEST_TARGET_NAME = NYPLOAuthWebFlowExample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D3726AE1F1E9F190063E9FB /* Build configuration list for PBXProject "NYPLClever" */ = {
+		2D3726AE1F1E9F190063E9FB /* Build configuration list for PBXProject "NYPLOAuthWebFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726C61F1E9F1A0063E9FB /* Debug */,
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3726C81F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLClever" */ = {
+		2D3726C81F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726C91F1E9F1A0063E9FB /* Debug */,
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverTests" */ = {
+		2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726CC1F1E9F1A0063E9FB /* Debug */,
@@ -686,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExample" */ = {
+		2D3726F71F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726F81F1EAB570063E9FB /* Debug */,
@@ -695,7 +695,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLCleverExampleUITests" */ = {
+		2D3726FD1F1EAB570063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726FE1F1EAB570063E9FB /* Debug */,

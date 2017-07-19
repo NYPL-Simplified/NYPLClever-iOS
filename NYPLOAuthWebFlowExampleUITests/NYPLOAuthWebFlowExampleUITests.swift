@@ -1,6 +1,6 @@
 import XCTest
 
-class NYPLCleverExampleUITests: XCTestCase {
+class NYPLOAuthWebFlowExampleUITests: XCTestCase {
 
   override func setUp() {
     super.setUp()
