@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D3726BC1F1E9F1A0063E9FB"
-               BuildableName = "NYPLOAuthWebFlowTests.xctest"
-               BlueprintName = "NYPLOAuthWebFlowTests"
-               ReferencedContainer = "container:NYPLOAuthWebFlow.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

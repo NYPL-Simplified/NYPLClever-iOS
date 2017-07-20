@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D3726BE1F1E9F1A0063E9FB /* NYPLOAuthWebFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
@@ -24,12 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D3726BF1F1E9F1A0063E9FB /* PBXContainerItemProxy */ = {
+		2D0A18E71F215A3B0065328F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D3726AB1F1E9F190063E9FB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D3726B31F1E9F190063E9FB;
-			remoteInfo = NYPLOAuthWebFlow;
+			remoteGlobalIDString = 2D3726D11F1EAB570063E9FB;
+			remoteInfo = NYPLOAuthWebFlowExample;
 		};
 		2D3726F11F1EAB570063E9FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,7 +50,7 @@
 		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLOAuthWebFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLOAuthWebFlowExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726C41F1E9F1A0063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3726D21F1EAB570063E9FB /* NYPLOAuthWebFlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYPLOAuthWebFlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726D41F1EAB570063E9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3726BE1F1E9F1A0063E9FB /* NYPLOAuthWebFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				2D3726B61F1E9F190063E9FB /* NYPLOAuthWebFlow */,
-				2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */,
 				2D3726D31F1EAB570063E9FB /* NYPLOAuthWebFlowExample */,
+				2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests */,
 				2D3726F31F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */,
 				2D3726B51F1E9F190063E9FB /* Products */,
 			);
@@ -119,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */,
-				2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */,
+				2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests.xctest */,
 				2D3726D21F1EAB570063E9FB /* NYPLOAuthWebFlowExample.app */,
 				2D3726F01F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.xctest */,
 			);
@@ -137,7 +135,7 @@
 			path = NYPLOAuthWebFlow;
 			sourceTree = "<group>";
 		};
-		2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */ = {
+		2D3726C11F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
@@ -147,6 +145,7 @@
 				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
 				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */,
 			);
+			name = NYPLOAuthWebFlowExampleTests;
 			path = NYPLOAuthWebFlowTests;
 			sourceTree = "<group>";
 		};
@@ -204,9 +203,9 @@
 			productReference = 2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */ = {
+		2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowTests" */;
+			buildConfigurationList = 2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExampleTests" */;
 			buildPhases = (
 				2D3726B91F1E9F1A0063E9FB /* Sources */,
 				2D3726BA1F1E9F1A0063E9FB /* Frameworks */,
@@ -215,11 +214,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2D3726C01F1E9F1A0063E9FB /* PBXTargetDependency */,
+				2D0A18E81F215A3B0065328F /* PBXTargetDependency */,
 			);
-			name = NYPLOAuthWebFlowTests;
+			name = NYPLOAuthWebFlowExampleTests;
 			productName = NYPLOAuthWebFlowTests;
-			productReference = 2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests.xctest */;
+			productReference = 2D3726BD1F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */ = {
@@ -306,8 +305,8 @@
 			projectRoot = "";
 			targets = (
 				2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */,
-				2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowTests */,
 				2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */,
+				2D3726BC1F1E9F1A0063E9FB /* NYPLOAuthWebFlowExampleTests */,
 				2D3726EF1F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests */,
 			);
 		};
@@ -405,10 +404,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D3726C01F1E9F1A0063E9FB /* PBXTargetDependency */ = {
+		2D0A18E81F215A3B0065328F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D3726B31F1E9F190063E9FB /* NYPLOAuthWebFlow */;
-			targetProxy = 2D3726BF1F1E9F1A0063E9FB /* PBXContainerItemProxy */;
+			target = 2D3726D11F1EAB570063E9FB /* NYPLOAuthWebFlowExample */;
+			targetProxy = 2D0A18E71F215A3B0065328F /* PBXContainerItemProxy */;
 		};
 		2D3726F21F1EAB570063E9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -677,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowTests" */ = {
+		2D3726CB1F1E9F1A0063E9FB /* Build configuration list for PBXNativeTarget "NYPLOAuthWebFlowExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D3726CC1F1E9F1A0063E9FB /* Debug */,
