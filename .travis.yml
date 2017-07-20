@@ -4,8 +4,8 @@ before_install:
   - set -ef -o pipefail
   - ./swiftlint-setup.sh
   - FLAGS=()
-  - FLAGS+=(-project NYPLClever.xcodeproj)
-  - FLAGS+=(-scheme NYPLCleverExample)
+  - FLAGS+=(-project NYPLOAuthWebFlow.xcodeproj)
+  - FLAGS+=(-scheme NYPLOAuthWebFlowExample)
   - FLAGS+=(-sdk iphonesimulator10.3)
   - FLAGS+=(-destination 'platform=iOS Simulator,name=iPhone 7')
 script:
