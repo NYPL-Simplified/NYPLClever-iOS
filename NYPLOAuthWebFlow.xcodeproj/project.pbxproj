@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationDocument.swift; sourceTree = "<group>"; };
 		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				2D3727071F1EC7110063E9FB /* JSON.swift */,
 				2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */,
 				2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */,
+				2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */,
 			);
 			path = NYPLOAuthWebFlow;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */,
+				2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */,
 				2D3727081F1EC7110063E9FB /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
