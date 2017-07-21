@@ -13,12 +13,15 @@ public struct OPDSAuthenticationDocument {
     guard let id = dict["id"] as? String else { return nil }
     self.id = id
 
-    guard let linksDict = dict["links"] as? [String: Any] else { return nil }
-    var links: [LinkKey: Link?] = [:]
-    for (k, v) in linksDict {
-      links[LinkKey(string: k)] = Link(jsonObject: v)
+    if let linksDict = dict["links"] as? [String: Any] {
+      var links: [LinkKey: Link?] = [:]
+      for (k, v) in linksDict {
+        links[LinkKey(string: k)] = Link(jsonObject: v)
+      }
+      self.links = links
+    } else {
+      self.links = [:]
     }
-    self.links = links
 
     guard let name = dict["name"] as? String else { return nil }
     self.name = name
