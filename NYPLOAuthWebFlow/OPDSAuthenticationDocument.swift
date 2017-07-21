@@ -93,17 +93,20 @@ public struct OPDSAuthenticationDocument {
 
   struct Link {
     let href: URL
-    let type: LinkType
+    let type: LinkType?
 
     init?(jsonObject: Any) {
       guard
         let dict = jsonObject as? [String: String],
         let hrefString = dict["href"],
-        let href = URL(string: hrefString),
-        let typeString = dict["type"]
+        let href = URL(string: hrefString)
         else { return nil }
       self.href = href
-      self.type = LinkType(string: typeString)
+      if let type = dict["type"] {
+        self.type = LinkType(string: type)
+      } else {
+        self.type = nil
+      }
     }
   }
 
