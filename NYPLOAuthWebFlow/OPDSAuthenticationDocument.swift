@@ -4,7 +4,7 @@ public struct OPDSAuthenticationDocument {
 
   let id: String
   let links: [LinkKey: Link?]
-  let name: String
+  let name: String?
   let providers: [ProviderURI: Provider]
 
   init?(jsonObject: Any) {
@@ -23,20 +23,18 @@ public struct OPDSAuthenticationDocument {
       self.links = [:]
     }
 
-    guard let name = dict["name"] as? String else { return nil }
-    self.name = name
+    self.name = dict["name"] as? String
 
     guard let providersDict = dict["providers"] as? [String: Any] else { return nil }
     var providers: [ProviderURI: Provider] = [:]
     for (providerURIString, providerJSONObject) in providersDict {
       guard let providerDict = providerJSONObject as? [String: Any] else { return nil }
-      guard let providerName = providerDict["name"] as? String else { return nil }
       guard let methodsDict = providerDict["methods"] as? [String: Any] else { return nil }
       let methods = methodsDict.map { (methodURIString, methodJSONObject) in
         Method(uri: MethodURI(string: methodURIString), jsonObject: methodJSONObject)
       }
       providers[ProviderURI(string: providerURIString)] =
-        Provider(methods: methods, name: providerName)
+        Provider(methods: methods, name: providerDict["name"] as? String)
     }
     self.providers = providers
   }
@@ -239,7 +237,7 @@ public struct OPDSAuthenticationDocument {
 
   struct Provider {
     let methods: [Method]
-    let name: String
+    let name: String?
   }
 }
 
