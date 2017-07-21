@@ -7,6 +7,37 @@ public struct OPDSAuthenticationDocument {
   let name: String
   let providers: [ProviderURI: Provider]
 
+  init?(jsonObject: Any) {
+    guard let dict = jsonObject as? [String: Any] else { return nil }
+
+    guard let id = dict["id"] as? String else { return nil }
+    self.id = id
+
+    guard let linksDict = dict["links"] as? [String: Any] else { return nil }
+    var links: [LinkKey: Link?] = [:]
+    for (k, v) in linksDict {
+      links[LinkKey(string: k)] = Link(jsonObject: v)
+    }
+    self.links = links
+
+    guard let name = dict["name"] as? String else { return nil }
+    self.name = name
+
+    guard let providersDict = dict["providers"] as? [String: Any] else { return nil }
+    var providers: [ProviderURI: Provider] = [:]
+    for (providerURIString, providerJSONObject) in providersDict {
+      guard let providerDict = providerJSONObject as? [String: Any] else { return nil }
+      guard let providerName = providerDict["name"] as? String else { return nil }
+      guard let methodsDict = providerDict["methods"] as? [String: Any] else { return nil }
+      let methods = methodsDict.map { (methodURIString, methodJSONObject) in
+        Method(uri: MethodURI(string: methodURIString), jsonObject: methodJSONObject)
+      }
+      providers[ProviderURI(string: providerURIString)] =
+        Provider(methods: methods, name: providerName)
+    }
+    self.providers = providers
+  }
+
   enum LinkKey: Hashable {
     case copyright
     case privacyPolicy
