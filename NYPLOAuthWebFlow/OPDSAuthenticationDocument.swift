@@ -3,7 +3,7 @@ import Foundation
 public struct OPDSAuthenticationDocument {
 
   let id: String
-  let links: [LinkKey: Link]
+  let links: [LinkKey: Link?]
   let name: String
   let providers: [ProviderURI: Provider]
 
