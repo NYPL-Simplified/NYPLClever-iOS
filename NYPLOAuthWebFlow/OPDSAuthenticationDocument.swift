@@ -95,13 +95,13 @@ public struct OPDSAuthenticationDocument {
 
     init?(jsonObject: Any) {
       guard
-        let dict = jsonObject as? [String: String],
-        let hrefString = dict["href"],
+        let dict = jsonObject as? [String: Any],
+        let hrefString = dict["href"] as? String,
         let href = URL(string: hrefString)
         else { return nil }
       self.href = href
-      if let type = dict["type"] {
-        self.type = LinkType(string: type)
+      if let typeString = dict["type"] as? String {
+        self.type = LinkType(string: typeString)
       } else {
         self.type = nil
       }
@@ -215,17 +215,17 @@ public struct OPDSAuthenticationDocument {
       switch uri {
       case .basicAuth:
         guard
-          let dict = jsonObject as? [String: [String: String]],
-          let labels = dict["labels"],
-          let login = labels["login"],
-          let password = labels["password"]
+          let dict = jsonObject as? [String: Any],
+          let labels = dict["labels"] as? [String: Any],
+          let login = labels["login"] as? String,
+          let password = labels["password"] as? String
           else { self = .unrecognized(uri: uri, jsonObject: jsonObject); return }
         self = .basicAuth(loginLabel: login, passwordLabel: password)
       case .oauthWithIntermediary:
         guard
-          let dict = jsonObject as? [String: [String: String]],
-          let links = dict["links"],
-          let authenticateString = links["authenticate"],
+          let dict = jsonObject as? [String: Any],
+          let links = dict["links"] as? [String: Any],
+          let authenticateString = links["authenticate"] as? String,
           let authenticateURL = URL(string: authenticateString)
           else { self = .unrecognized(uri: uri, jsonObject: jsonObject); return }
         self = .oauthWithIntermediary(authenticateURL: authenticateURL)
