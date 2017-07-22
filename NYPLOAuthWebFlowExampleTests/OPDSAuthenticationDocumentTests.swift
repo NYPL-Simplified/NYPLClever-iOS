@@ -16,11 +16,7 @@ class OPDSAuthenticationDocumentTests: XCTestCase {
     XCTAssertNotNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentGood")))
   }
 
-  func testBad0() {
-    XCTAssertNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentBad0")))
-  }
-
-  func testBad1() {
-    XCTAssertNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentBad1")))
+  func testBad() {
+    XCTAssertNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentBad")))
   }
 }

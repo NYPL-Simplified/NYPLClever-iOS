@@ -16,8 +16,7 @@
 		2D3726DF1F1EAB570063E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */; };
 		2D3726F51F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */; };
 		2D37270C1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */; };
-		2D3727101F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */; };
-		2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */; };
+		2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +61,7 @@
 		2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLOAuthWebFlowExampleUITests.swift; sourceTree = "<group>"; };
 		2D3726F61F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentGood.json; sourceTree = "<group>"; };
-		2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBad0.json; sourceTree = "<group>"; };
-		2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBad1.json; sourceTree = "<group>"; };
+		2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBad.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D24D1181F22D1A4005E7A84 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad.json */,
+				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		2D3726AA1F1E9F190063E9FB = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +142,7 @@
 			children = (
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
 				2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */,
-				2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */,
-				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */,
-				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */,
+				2D24D1181F22D1A4005E7A84 /* Data */,
 			);
 			path = NYPLOAuthWebFlowExampleTests;
 			sourceTree = "<group>";
@@ -318,8 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D37270C1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json in Resources */,
-				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json in Resources */,
-				2D3727101F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json in Resources */,
+				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
