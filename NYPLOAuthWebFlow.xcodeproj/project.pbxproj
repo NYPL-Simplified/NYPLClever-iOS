@@ -154,8 +154,7 @@
 				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
 				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */,
 			);
-			name = NYPLOAuthWebFlowExampleTests;
-			path = NYPLOAuthWebFlowTests;
+			path = NYPLOAuthWebFlowExampleTests;
 			sourceTree = "<group>";
 		};
 		2D3726D31F1EAB570063E9FB /* NYPLOAuthWebFlowExample */ = {
