@@ -1,0 +1,34 @@
+{
+  "providers": {
+    "http://librarysimplified.org/terms/auth/clever": {
+      "methods": {
+        "http://librarysimplified.org/authtype/OAuth-with-intermediary": {
+          "links": {
+            "authenticate": "https://circulation.openebooks.us/oauth_authenticate?provider=Clever"
+          }
+        }
+      },
+      "name": "Clever"
+    },
+    "http://librarysimplified.org/terms/auth/library-barcode": {
+      "methods": 42,
+      "name": "Library Barcode"
+    }
+  },
+  "id": "eb6ce82b-612e-3ffc-96a3-46ecb37e409a",
+  "links": {
+    "terms-of-service": {
+      "href": "http://openebooks.net/app_user_agreement.html",
+      "type": "text/html"
+    },
+    "privacy-policy": {
+      "href": "http://openebooks.net/app_privacy.html",
+      "type": "text/html"
+    },
+    "copyright": {
+      "href": "http://openebooks.net/app_acknowledgments.html",
+      "type": "text/html"
+    }
+  },
+  "name": "Library"
+}

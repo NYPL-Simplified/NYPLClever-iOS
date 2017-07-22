@@ -1,5 +1,5 @@
 {
-  "notProviders": {
+  "providers": {
     "http://librarysimplified.org/terms/auth/clever": {
       "methods": {
         "http://librarysimplified.org/authtype/OAuth-with-intermediary": {
@@ -22,7 +22,6 @@
       "name": "Library Barcode"
     }
   },
-  "id": "eb6ce82b-612e-3ffc-96a3-46ecb37e409a",
   "links": {
     "terms-of-service": {
       "href": "http://openebooks.net/app_user_agreement.html",
