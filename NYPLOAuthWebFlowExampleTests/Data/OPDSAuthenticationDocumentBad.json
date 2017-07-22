@@ -1,12 +1,10 @@
 {
-  "providers": {
+  "notProviders": {
     "http://librarysimplified.org/terms/auth/clever": {
       "methods": {
         "http://librarysimplified.org/authtype/OAuth-with-intermediary": {
           "links": {
-            "authenticate": {
-              "authenticate": "https://circulation.openebooks.us/oauth_authenticate?provider=Clever"
-            }
+            "authenticate": "https://circulation.openebooks.us/oauth_authenticate?provider=Clever"
           }
         }
       },
