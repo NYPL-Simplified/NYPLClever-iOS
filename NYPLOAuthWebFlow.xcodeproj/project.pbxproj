@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */; };
+		2D24D1151F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */; };
+		2D24D1171F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationDocument.swift; sourceTree = "<group>"; };
+		2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationDocumentTests.swift; sourceTree = "<group>"; };
+		2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentTestsGood.json; sourceTree = "<group>"; };
 		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			children = (
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
 				2D3727131F1ED3570063E9FB /* JSONTests.swift */,
+				2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */,
+				2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */,
 				2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */,
 				2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */,
 				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
@@ -328,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */,
+				2D24D1171F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json in Resources */,
 				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json in Resources */,
 				2D3727101F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json in Resources */,
 			);
@@ -383,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D24D1151F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift in Sources */,
 				2D37270E1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift in Sources */,
 				2D3727141F1ED3570063E9FB /* JSONTests.swift in Sources */,
 			);
