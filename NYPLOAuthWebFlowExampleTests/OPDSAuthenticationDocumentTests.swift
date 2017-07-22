@@ -3,7 +3,7 @@ import XCTest
 
 class OPDSAuthenticationDocumentTests: XCTestCase {
 
-  let bundle = Bundle(for: OPDSAuthenticationTests.self)
+  let bundle = Bundle(for: OPDSAuthenticationDocumentTests.self)
 
   /// Returns a JSON object from the test bundle.
   private func object(_ name: String) -> Any {
@@ -12,7 +12,15 @@ class OPDSAuthenticationDocumentTests: XCTestCase {
     return try! JSONSerialization.jsonObject(with: data)
   }
 
-  func testParse() {
-    XCTAssertNotNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentTestsGood")))
+  func testGood() {
+    XCTAssertNotNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentGood")))
+  }
+
+  func testBad0() {
+    XCTAssertNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentBad0")))
+  }
+
+  func testBad1() {
+    XCTAssertNil(OPDSAuthenticationDocument(jsonObject: object("OPDSAuthenticationDocumentBad1")))
   }
 }

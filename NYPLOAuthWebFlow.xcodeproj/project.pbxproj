@@ -9,20 +9,15 @@
 /* Begin PBXBuildFile section */
 		2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */; };
 		2D24D1151F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */; };
-		2D24D1171F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
 		2D3726DC1F1EAB570063E9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DB1F1EAB570063E9FB /* Assets.xcassets */; };
 		2D3726DF1F1EAB570063E9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3726DD1F1EAB570063E9FB /* LaunchScreen.storyboard */; };
 		2D3726F51F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */; };
-		2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */; };
-		2D3727081F1EC7110063E9FB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727071F1EC7110063E9FB /* JSON.swift */; };
-		2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */; };
-		2D37270E1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */; };
-		2D3727101F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */; };
-		2D3727121F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */; };
-		2D3727141F1ED3570063E9FB /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3727131F1ED3570063E9FB /* JSONTests.swift */; };
+		2D37270C1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */; };
+		2D3727101F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */; };
+		2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +47,6 @@
 /* Begin PBXFileReference section */
 		2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationDocument.swift; sourceTree = "<group>"; };
 		2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationDocumentTests.swift; sourceTree = "<group>"; };
-		2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentTestsGood.json; sourceTree = "<group>"; };
 		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,13 +61,9 @@
 		2D3726F01F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYPLOAuthWebFlowExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726F41F1EAB570063E9FB /* NYPLOAuthWebFlowExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPLOAuthWebFlowExampleUITests.swift; sourceTree = "<group>"; };
 		2D3726F61F1EAB570063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthentication.swift; sourceTree = "<group>"; };
-		2D3727071F1EC7110063E9FB /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsGood.json; sourceTree = "<group>"; };
-		2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSAuthenticationTests.swift; sourceTree = "<group>"; };
-		2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsBad0.json; sourceTree = "<group>"; };
-		2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationTestsBad1.json; sourceTree = "<group>"; };
-		2D3727131F1ED3570063E9FB /* JSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
+		2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentGood.json; sourceTree = "<group>"; };
+		2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBad0.json; sourceTree = "<group>"; };
+		2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBad1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2D3726B81F1E9F190063E9FB /* Info.plist */,
-				2D3727071F1EC7110063E9FB /* JSON.swift */,
 				2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */,
-				2D3727051F1EC4B80063E9FB /* OPDSAuthentication.swift */,
 				2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */,
 			);
 			path = NYPLOAuthWebFlow;
@@ -146,13 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				2D3726C41F1E9F1A0063E9FB /* Info.plist */,
-				2D3727131F1ED3570063E9FB /* JSONTests.swift */,
 				2D24D1141F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift */,
-				2D24D1161F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json */,
-				2D37270D1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift */,
-				2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json */,
-				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json */,
-				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json */,
+				2D37270F1F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json */,
+				2D3727111F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json */,
+				2D37270B1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json */,
 			);
 			path = NYPLOAuthWebFlowExampleTests;
 			sourceTree = "<group>";
@@ -332,10 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D37270C1F1ECD820063E9FB /* OPDSAuthenticationTestsGood.json in Resources */,
-				2D24D1171F22CD4A005E7A84 /* OPDSAuthenticationDocumentTestsGood.json in Resources */,
-				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationTestsBad1.json in Resources */,
-				2D3727101F1ED0A50063E9FB /* OPDSAuthenticationTestsBad0.json in Resources */,
+				2D37270C1F1ECD820063E9FB /* OPDSAuthenticationDocumentGood.json in Resources */,
+				2D3727121F1ED14C0063E9FB /* OPDSAuthenticationDocumentBad1.json in Resources */,
+				2D3727101F1ED0A50063E9FB /* OPDSAuthenticationDocumentBad0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3727061F1EC4B80063E9FB /* OPDSAuthentication.swift in Sources */,
 				2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */,
-				2D3727081F1EC7110063E9FB /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,8 +372,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D24D1151F22CD03005E7A84 /* OPDSAuthenticationDocumentTests.swift in Sources */,
-				2D37270E1F1ECFFE0063E9FB /* OPDSAuthenticationTests.swift in Sources */,
-				2D3727141F1ED3570063E9FB /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
