@@ -46,8 +46,8 @@ public struct OPDSAuthenticationDocument {
     case unrecognized(string: String)
 
     private static let copyrightString = "copyright"
-    private static let privacyPolicyString = "privacyPolicy"
-    private static let termsOfServiceString = "termsOfService"
+    private static let privacyPolicyString = "privacy-policy"
+    private static let termsOfServiceString = "terms-of-service"
 
     init(string: String) {
       switch string {
