@@ -256,6 +256,17 @@ func == (a: OPDSAuthenticationDocument.LinkKey, b: OPDSAuthenticationDocument.Li
   }
 }
 
+func == (a: OPDSAuthenticationDocument.LinkType, b: OPDSAuthenticationDocument.LinkType) -> Bool {
+  switch (a, b) {
+  case (.textHTML, .textHTML):
+    return true
+  case let (.unrecognized(stringA), .unrecognized(stringB)):
+    return stringA == stringB
+  default:
+    return false
+  }
+}
+
 func == (a: OPDSAuthenticationDocument.ProviderURI, b: OPDSAuthenticationDocument.ProviderURI) -> Bool {
   switch (a, b) {
   case (.clever, .clever):

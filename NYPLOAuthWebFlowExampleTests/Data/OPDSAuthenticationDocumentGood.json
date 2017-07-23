@@ -17,10 +17,18 @@
 						"login": "Access Code",
 						"password": "PIN"
 					}
-				}
+				},
+        "nonsense": {
+          "foo": 42
+        }
 			},
 			"name": "Library Barcode"
-		}
+		},
+    "some-arbitrary-uri": {
+      "methods": {
+        
+      }
+    }
 	},
 	"id": "eb6ce82b-612e-3ffc-96a3-46ecb37e409a",
 	"links": {
@@ -35,7 +43,11 @@
 		"copyright": {
 			"href": "http://openebooks.net/app_acknowledgments.html",
 			"type": "text/html"
-		}
+		},
+    "unexpected-link": {
+      "href": "http://example.com/nowhere.html",
+      "type": "text/html"
+    }
 	},
 	"name": "Library"
 }
