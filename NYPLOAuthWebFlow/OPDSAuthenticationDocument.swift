@@ -39,7 +39,7 @@ public struct OPDSAuthenticationDocument {
     self.providers = providers
   }
 
-  enum LinkKey: Hashable {
+  public enum LinkKey: Hashable {
     case copyright
     case privacyPolicy
     case termsOfService
@@ -62,7 +62,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var string: String {
+    public var string: String {
       switch self {
       case .copyright:
         return LinkKey.copyrightString
@@ -75,7 +75,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var hashValue: Int {
+    public var hashValue: Int {
       switch self {
       case .copyright:
         return 0
@@ -89,7 +89,7 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  struct Link {
+  public struct Link {
     let href: URL
     let type: LinkType?
 
@@ -108,7 +108,7 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  enum LinkType {
+  public enum LinkType {
     case textHTML
     case unrecognized(string: String)
 
@@ -123,7 +123,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var string: String {
+    public var string: String {
       switch self {
       case .textHTML:
         return LinkType.textHTMLString
@@ -133,7 +133,7 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  enum ProviderURI: Hashable {
+  public enum ProviderURI: Hashable {
     case clever
     case libraryBarcode
     case unrecognized(string: String)
@@ -152,7 +152,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var string: String {
+    public var string: String {
       switch self {
       case .clever:
         return ProviderURI.cleverString
@@ -163,7 +163,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var hashValue: Int {
+    public var hashValue: Int {
       switch self {
       case .clever:
         return 0
@@ -175,7 +175,7 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  enum MethodURI {
+  public enum MethodURI {
     case basicAuth
     case oauthWithIntermediary
     case unrecognized(string: String)
@@ -194,7 +194,7 @@ public struct OPDSAuthenticationDocument {
       }
     }
 
-    var string: String {
+    public var string: String {
       switch self {
       case .basicAuth:
         return MethodURI.basicAuthString
@@ -206,7 +206,7 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  enum Method {
+  public enum Method {
     case basicAuth(loginLabel: String, passwordLabel: String)
     case oauthWithIntermediary(authenticateURL: URL)
     case unrecognized(uri: MethodURI, jsonObject: Any)
@@ -235,13 +235,13 @@ public struct OPDSAuthenticationDocument {
     }
   }
 
-  struct Provider {
+  public struct Provider {
     let methods: [Method]
     let name: String?
   }
 }
 
-func == (a: OPDSAuthenticationDocument.LinkKey, b: OPDSAuthenticationDocument.LinkKey) -> Bool {
+public func == (a: OPDSAuthenticationDocument.LinkKey, b: OPDSAuthenticationDocument.LinkKey) -> Bool {
   switch (a, b) {
   case (.copyright, .copyright):
     return true
@@ -256,7 +256,7 @@ func == (a: OPDSAuthenticationDocument.LinkKey, b: OPDSAuthenticationDocument.Li
   }
 }
 
-func == (a: OPDSAuthenticationDocument.LinkType, b: OPDSAuthenticationDocument.LinkType) -> Bool {
+public func == (a: OPDSAuthenticationDocument.LinkType, b: OPDSAuthenticationDocument.LinkType) -> Bool {
   switch (a, b) {
   case (.textHTML, .textHTML):
     return true
@@ -267,7 +267,7 @@ func == (a: OPDSAuthenticationDocument.LinkType, b: OPDSAuthenticationDocument.L
   }
 }
 
-func == (a: OPDSAuthenticationDocument.ProviderURI, b: OPDSAuthenticationDocument.ProviderURI) -> Bool {
+public func == (a: OPDSAuthenticationDocument.ProviderURI, b: OPDSAuthenticationDocument.ProviderURI) -> Bool {
   switch (a, b) {
   case (.clever, .clever):
     return true
