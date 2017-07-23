@@ -15,6 +15,8 @@
 		2D24D1201F22D4C7005E7A84 /* OPDSAuthenticationDocumentBadProviders.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D24D11F1F22D4C7005E7A84 /* OPDSAuthenticationDocumentBadProviders.json */; };
 		2D24D1221F22D61B005E7A84 /* OPDSAuthenticationDocumentBadProvider.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D24D1211F22D61B005E7A84 /* OPDSAuthenticationDocumentBadProvider.json */; };
 		2D24D1251F253216005E7A84 /* OAuthWithIntermediaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24D1231F253066005E7A84 /* OAuthWithIntermediaryViewController.swift */; };
+		2D24D1271F253A07005E7A84 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D24D1261F253A07005E7A84 /* View.swift */; };
+		2D24D1281F253D7C005E7A84 /* NYPLOAuthWebFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */; };
 		2D3726C51F1E9F1A0063E9FB /* NYPLOAuthWebFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3726D51F1EAB570063E9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D41F1EAB570063E9FB /* AppDelegate.swift */; };
 		2D3726D71F1EAB570063E9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3726D61F1EAB570063E9FB /* ViewController.swift */; };
@@ -57,6 +59,7 @@
 		2D24D11F1F22D4C7005E7A84 /* OPDSAuthenticationDocumentBadProviders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBadProviders.json; sourceTree = "<group>"; };
 		2D24D1211F22D61B005E7A84 /* OPDSAuthenticationDocumentBadProvider.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OPDSAuthenticationDocumentBadProvider.json; sourceTree = "<group>"; };
 		2D24D1231F253066005E7A84 /* OAuthWithIntermediaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthWithIntermediaryViewController.swift; path = ../OAuthWithIntermediaryViewController.swift; sourceTree = "<group>"; };
+		2D24D1261F253A07005E7A84 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2D3726B41F1E9F190063E9FB /* NYPLOAuthWebFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYPLOAuthWebFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYPLOAuthWebFlow.h; sourceTree = "<group>"; };
 		2D3726B81F1E9F190063E9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D24D1281F253D7C005E7A84 /* NYPLOAuthWebFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +152,7 @@
 				2D3726B71F1E9F190063E9FB /* NYPLOAuthWebFlow.h */,
 				2D24D1231F253066005E7A84 /* OAuthWithIntermediaryViewController.swift */,
 				2D0A18E91F2165BD0065328F /* OPDSAuthenticationDocument.swift */,
+				2D24D1261F253A07005E7A84 /* View.swift */,
 			);
 			path = NYPLOAuthWebFlow;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 			files = (
 				2D0A18EA1F2165BD0065328F /* OPDSAuthenticationDocument.swift in Sources */,
 				2D24D1251F253216005E7A84 /* OAuthWithIntermediaryViewController.swift in Sources */,
+				2D24D1271F253A07005E7A84 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
