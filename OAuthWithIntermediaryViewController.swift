@@ -84,8 +84,8 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
 }
 
 extension OAuthWithIntermediaryViewController: SFSafariViewControllerDelegate {
-  public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
 
+  public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
     // Since this delegate method is called before the dismissal is complete, it is NOT safe to
     // call `self.cancelHandler` here as it may invoke another dismissal (and having two active
     // at the same time is not permissable). As such, we wait a full second before calling the
