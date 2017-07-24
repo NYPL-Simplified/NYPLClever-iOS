@@ -91,10 +91,8 @@ extension OAuthWithIntermediaryViewController: SFSafariViewControllerDelegate {
     // at the same time is not permissable). As such, we wait a full second before calling the
     // handler. Since Apple's API is silly, this is the best we can do.
     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-      if let cancelHandler = self.cancelHandler {
-        cancelHandler()
-        self.cancelHandler = nil
-      }
+      self.cancelHandler?()
+      self.cancelHandler = nil
     }
   }
 }
