@@ -1,3 +1,4 @@
+import NYPLOAuthWebFlow
 import UIKit
 
 @UIApplicationMain
@@ -15,5 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.makeKeyAndVisible()
 
     return true
+  }
+
+  func application(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+
+    if url.scheme == "oauth-web-flow-example" {
+      NYPLOAuthWebFlow.OAuthWithIntermediaryViewController.sharedInstance.resumeAfterRedirect(url: url)
+      return true
+    } else {
+      return false
+    }
   }
 }

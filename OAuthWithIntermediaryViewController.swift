@@ -1,12 +1,19 @@
 import SafariServices
 import UIKit
 
+public protocol OAuthWithIntermediaryViewControllerDelegate: class {
+  func oauthWithIntermediaryViewControllerDidCancel()
+  func oauthWithIntermediaryViewControllerDidFail(withError error: Error?)
+  func oauthWithIntermediaryViewControllerDidSucceed(withToken token: String)
+}
+
 public final class OAuthWithIntermediaryViewController: UIViewController {
 
-  private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-  fileprivate var cancelHandler: (() -> Void)?
-
   public static let sharedInstance = OAuthWithIntermediaryViewController()
+
+  public weak var delegate: OAuthWithIntermediaryViewControllerDelegate?
+
+  private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
 
   private init() {
     super.init(nibName: nil, bundle: nil)
@@ -29,16 +36,16 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
 
   public func authorize(
     documentURL: URL,
-    providerURI: OPDSAuthenticationDocument.ProviderURI,
-    successHandler: @escaping () -> Void,
-    failureHandler: @escaping (Error?) -> Void,
-    cancelHandler: @escaping () -> Void) {
+    redirectURL: URL,
+    providerURI: OPDSAuthenticationDocument.ProviderURI) {
 
     let session = URLSession(configuration: .ephemeral, delegate: nil, delegateQueue: OperationQueue.main)
 
+    let components = URLComponents(url: documentURL, resolvingAgainstBaseURL: false)
+
     let task = session.dataTask(with: documentURL) { (data, response, error) in
       if let error = error {
-        failureHandler(error)
+        self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: error)
         return
       }
 
@@ -49,7 +56,7 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
           let document = OPDSAuthenticationDocument(jsonObject: jsonObject),
           let provider = document.providers[providerURI]
         else {
-          failureHandler(nil)
+          self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
           return
         }
 
@@ -66,20 +73,52 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
             }
           })
         else {
-          failureHandler(nil)
+          self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
           return
         }
 
-        self.cancelHandler = cancelHandler
-        let safariViewController = SFSafariViewController(url: authorizeURL)
+        var components = URLComponents(url: authorizeURL, resolvingAgainstBaseURL: false)
+        components?.queryItems?.append(URLQueryItem(name: "redirect_uri", value: redirectURL.absoluteString))
+        guard let url = components?.url else {
+          self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
+          return
+        }
+
+        let safariViewController = SFSafariViewController(url: url)
         safariViewController.delegate = self
         self.present(safariViewController, animated: true, completion: nil)
       } else {
-        failureHandler(nil)
+        self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
       }
     }
 
     task.resume()
+  }
+
+  public func resumeAfterRedirect(url: URL) {
+    guard
+      let fragment = url.fragment,
+      let queryItems = URLComponents(string: "?" + fragment)?.queryItems
+    else {
+      self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
+      return
+    }
+
+    var query: [String: String] = [:]
+    for item in queryItems {
+      if let value = item.value {
+        query[item.name] = value
+      }
+    }
+
+    guard
+      let accessToken = query["access_token"]
+    else {
+      self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError:nil)
+      return
+    }
+
+    self.delegate?.oauthWithIntermediaryViewControllerDidSucceed(withToken: accessToken)
   }
 }
 
@@ -88,11 +127,10 @@ extension OAuthWithIntermediaryViewController: SFSafariViewControllerDelegate {
   public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
     // Since this delegate method is called before the dismissal is complete, it is NOT safe to
     // call `self.cancelHandler` here as it may invoke another dismissal (and having two active
-    // at the same time is not permissable). As such, we wait a full second before calling the
+    // at the same time is not permissable). As such, we wait before calling the
     // handler. Since Apple's API is silly, this is the best we can do.
-    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-      self.cancelHandler?()
-      self.cancelHandler = nil
+    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1500)) {
+      self.delegate?.oauthWithIntermediaryViewControllerDidCancel()
     }
   }
 }
