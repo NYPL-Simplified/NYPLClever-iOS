@@ -41,8 +41,6 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
 
     let session = URLSession(configuration: .ephemeral, delegate: nil, delegateQueue: OperationQueue.main)
 
-    let components = URLComponents(url: documentURL, resolvingAgainstBaseURL: false)
-
     let task = session.dataTask(with: documentURL) { (data, response, error) in
       if let error = error {
         self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: error)
