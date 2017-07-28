@@ -34,6 +34,18 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
     self.activityIndicator.startAnimating()
   }
 
+  /// Convenience method for calling from Objective-C.
+  public func authorize(
+    documentURL: URL,
+    redirectURL: URL,
+    providerURIString: String) {
+
+    self.authorize(
+      documentURL: documentURL,
+      redirectURL: redirectURL,
+      providerURI: OPDSAuthenticationDocument.ProviderURI(string: providerURIString))
+  }
+
   public func authorize(
     documentURL: URL,
     redirectURL: URL,
