@@ -124,7 +124,7 @@ public final class OAuthWithIntermediaryViewController: UIViewController {
     guard
       let accessToken = query["access_token"]
     else {
-      self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError:nil)
+      self.delegate?.oauthWithIntermediaryViewControllerDidFail(withError: nil)
       return
     }
 
